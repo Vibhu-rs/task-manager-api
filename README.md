@@ -40,7 +40,7 @@ You need Python 3.9 or newer.
 
 ```bash
 # 1. Clone the project
-git clone https://github.com/<your-username>/task-manager-api.git
+git clone https://github.com/Vibhu-rs/task-manager-api.git
 cd task-manager-api
 
 # 2. Create and activate a virtual environment
@@ -65,6 +65,9 @@ The API runs at `http://127.0.0.1:8000`.
 ## API Documentation
 
 Open **http://127.0.0.1:8000/docs** for interactive Swagger documentation, where you can try every endpoint.
+
+The full API specification is saved in [`docs/openapi.json`](docs/openapi.json). You can import it into Postman (**Import → File**) to get a ready-made collection of every endpoint, or paste it into https://editor.swagger.io to view it without running the server.
+![Swagger UI](docs/swagger.png)
 
 To use the task endpoints:
 1. Call `POST /register`, then `POST /login`, and copy the `token` from the response.
