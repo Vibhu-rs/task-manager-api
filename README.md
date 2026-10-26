@@ -67,12 +67,17 @@ The API runs at `http://127.0.0.1:8000`.
 Open **http://127.0.0.1:8000/docs** for interactive Swagger documentation, where you can try every endpoint.
 
 The full API specification is saved in [`docs/openapi.json`](docs/openapi.json). You can import it into Postman (**Import → File**) to get a ready-made collection of every endpoint, or paste it into https://editor.swagger.io to view it without running the server.
+
 ![Swagger UI](docs/swagger.png)
 
 To use the task endpoints:
 1. Call `POST /register`, then `POST /login`, and copy the `token` from the response.
 2. Click **Authorize** at the top of the page and paste the token.
 3. The padlock endpoints now work.
+
+**Live demo:** https://task-manager-api-r1nx.onrender.com/docs
+
+> Hosted on a free tier: the first request after inactivity can take ~30 seconds, and data may reset when the service restarts.
 
 ### Endpoints
 
